@@ -20,26 +20,32 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p><em>Last updated: October 3rd, 2025</em></p>
+  <p><em>Last updated: October 12, 2025</em></p>
 
   <p>805StreetFoods (“we,” “our,” or “us”) respects your privacy. This Privacy Policy explains how our mobile application (“the App”) handles information.</p>
 
   <h2>Information We Collect</h2>
   <ul>
     <li><strong>Account Information</strong>: If you sign in using email, Google, or Apple, we store your account identifier through Firebase Authentication.</li>
-    <li><strong>Vendor Information</strong>: Vendors may add or update information about their food trucks (e.g., name, description, schedule, and social media links).</li>
+    <li><strong>Vendor Information</strong>: Vendors may add or update information about their food trucks (e.g., name, description, schedule, photos, and social media links). Uploaded images are stored in Firebase Storage and may appear publicly in the app with vendor consent.</li>
     <li><strong>Analytics Data</strong>: We collect anonymous usage data (such as screen views, session length, and actions like creating an event) through Firebase Analytics. This data does not include personally identifiable information such as your name or email address.</li>
+    <li><strong>Optional Location Data</strong>: If you grant permission, the app may access your approximate location to display how far away a food truck or venue is. Location data is processed locally on your device and is never stored or shared.</li>
+    <li><strong>Reports & Feedback</strong>: If you submit a report or feedback and choose to include your email, it is used only for communication related to that report.</li>
   </ul>
-  <p>We do not collect personal information beyond what is required for account creation, vendor management, and basic app usage analytics.</p>
+  <p>We do not collect personal information beyond what is required for account creation, vendor management, and basic app functionality.</p>
 
   <h2>How We Use Information</h2>
   <ul>
     <li>To authenticate users and vendors.</li>
-    <li>To display truck schedules and related details within the app.</li>
-    <li>To allow vendors to manage their truck profiles and schedules.</li>
+    <li>To display truck and venue schedules and related details within the app.</li>
+    <li>To allow vendors to manage their truck profiles, images, and schedules.</li>
     <li>To understand app usage and improve functionality using anonymous analytics.</li>
+    <li>To respond to user feedback or reports when contact information is voluntarily provided.</li>
   </ul>
   <p>We do not sell, rent, or share user information with third parties for advertising purposes.</p>
+
+  <h2>Widgets</h2>
+  <p>The home-screen widget uses locally cached schedule data and does not transmit or store any personal information outside your device.</p>
 
   <h2>Account Deletion</h2>
   <p>You may delete your account at any time within the app. Deletion removes your Firebase account and associated vendor data from our database. This action cannot be undone.</p>
@@ -47,11 +53,11 @@
   <h2>Third-Party Services</h2>
   <p>The app uses the following services, which may handle data under their own privacy policies:</p>
   <ul>
-    <li>Firebase (Google) – Authentication, Firestore database, Analytics, Crashlytics</li>
+    <li>Firebase (Google) – Authentication, Firestore database, Storage, Analytics, Crashlytics</li>
     <li>Apple – Sign in with Apple</li>
     <li>Google – Google Sign-In</li>
   </ul>
-  <p>We encourage you to review their respective privacy policies. More on Firebase’s data practices: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a>.</p>
+  <p>We encourage you to review their respective privacy policies. More on Firebase’s data practices: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a>.</p>
 
   <h2>Data Security</h2>
   <p>We rely on Firebase and Apple’s infrastructure to protect your data using industry-standard encryption.</p>
