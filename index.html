@@ -13,14 +13,14 @@
       line-height: 1.6;
       color: #333;
     }
-    h1, h2 {
-      color: #222;
-    }
+    h1, h2, h3 { color: #222; }
+    code { background: #f6f6f6; padding: 0 .25rem; border-radius: 4px; }
+    ul { margin-left: 1.2rem; }
   </style>
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p><em>Last updated: October 12, 2025</em></p>
+  <p><em>Last updated: October 20, 2025</em></p>
 
   <p>805StreetFoods (“we,” “our,” or “us”) respects your privacy. This Privacy Policy explains how our mobile application (“the App”) handles information.</p>
 
@@ -28,39 +28,63 @@
   <ul>
     <li><strong>Account Information</strong>: If you sign in using email, Google, or Apple, we store your account identifier through Firebase Authentication.</li>
     <li><strong>Vendor Information</strong>: Vendors may add or update information about their food trucks (e.g., name, description, schedule, photos, and social media links). Uploaded images are stored in Firebase Storage and may appear publicly in the app with vendor consent.</li>
-    <li><strong>Analytics Data</strong>: We collect anonymous usage data (such as screen views, session length, and actions like creating an event) through Firebase Analytics. This data does not include personally identifiable information such as your name or email address.</li>
-    <li><strong>Optional Location Data</strong>: If you grant permission, the app may access your approximate location to display how far away a food truck or venue is. Location data is processed locally on your device and is never stored or shared.</li>
-    <li><strong>Reports & Feedback</strong>: If you submit a report or feedback and choose to include your email, it is used only for communication related to that report.</li>
+    <li><strong>Analytics & Diagnostics</strong>: We collect usage analytics (e.g., screen views, session length, feature usage) via Firebase Analytics, and crash/diagnostic data via Firebase Crashlytics. Analytics data does not include your name or email.</li>
+    <li><strong>Optional Location Data</strong>: If you grant permission, the app may access your approximate location to display distance to a food truck or venue. Location is processed on your device and is not stored or shared.</li>
+    <li><strong>Reports & Feedback</strong>: If you submit a report or feedback and include your email, it is used only to respond to that submission.</li>
   </ul>
   <p>We do not collect personal information beyond what is required for account creation, vendor management, and basic app functionality.</p>
+
+  <h2>Permissions We Request (and Why)</h2>
+  <ul>
+    <li><strong>Calendars</strong> (iOS permission): Used <em>only</em> to add an event you explicitly choose to your device’s calendar via EventKit. We do not read your existing calendar events, and no calendar data is sent to our servers.</li>
+    <li><strong>Location</strong> (optional): Used to show approximate distance to trucks/venues. Processed locally; not stored or shared.</li>
+    <!-- Add others here if you enable them in the future (e.g., Photos, Camera) -->
+  </ul>
 
   <h2>How We Use Information</h2>
   <ul>
     <li>To authenticate users and vendors.</li>
     <li>To display truck and venue schedules and related details within the app.</li>
     <li>To allow vendors to manage their truck profiles, images, and schedules.</li>
-    <li>To understand app usage and improve functionality using anonymous analytics.</li>
+    <li>To improve the app using aggregate analytics and crash diagnostics.</li>
     <li>To respond to user feedback or reports when contact information is voluntarily provided.</li>
   </ul>
-  <p>We do not sell, rent, or share user information with third parties for advertising purposes.</p>
+  <p>We do not sell, rent, or share user information with third parties for advertising purposes, and we do not use data for cross-app tracking.</p>
+
+  <h2>Calendar Events</h2>
+  <p>When you tap “Add to Calendar,” the App uses EventKit to create an event on your device with the truck name as the title, the venue as the location, and event notes/order link in the description. The App does not read, list, or upload your existing calendar events.</p>
 
   <h2>Widgets</h2>
   <p>The home-screen widget uses locally cached schedule data and does not transmit or store any personal information outside your device.</p>
 
-  <h2>Account Deletion</h2>
-  <p>You may delete your account at any time within the app. Deletion removes your Firebase account and associated vendor data from our database. This action cannot be undone.</p>
+  <h2>Data Retention</h2>
+  <ul>
+    <li><strong>Account data</strong>: Retained while your account is active. Deleted when you delete your account.</li>
+    <li><strong>Vendor content</strong>: Retained while published or managed by the vendor; removed on vendor request or account deletion.</li>
+    <li><strong>Analytics & diagnostics</strong>: Retained by Firebase per their standard retention to help us maintain and improve the App.</li>
+  </ul>
+
+  <h2>Your Choices</h2>
+  <ul>
+    <li><strong>Permissions</strong>: You can change Calendar or Location permissions in iOS Settings &raquo; Privacy &amp; Security.</li>
+    <li><strong>Account Deletion</strong>: You may delete your account at any time within the app. Deletion removes your Firebase account and associated vendor data from our database. This action cannot be undone.</li>
+    <li><strong>Marketing</strong>: We do not use your data for advertising or tracking.</li>
+  </ul>
 
   <h2>Third-Party Services</h2>
-  <p>The app uses the following services, which may handle data under their own privacy policies:</p>
+  <p>The app uses the following services, which handle data under their own privacy policies:</p>
   <ul>
     <li>Firebase (Google) – Authentication, Firestore database, Storage, Analytics, Crashlytics</li>
     <li>Apple – Sign in with Apple</li>
     <li>Google – Google Sign-In</li>
   </ul>
-  <p>We encourage you to review their respective privacy policies. More on Firebase’s data practices: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a>.</p>
+  <p>Learn more about Firebase privacy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a>.</p>
 
   <h2>Data Security</h2>
-  <p>We rely on Firebase and Apple’s infrastructure to protect your data using industry-standard encryption.</p>
+  <p>We rely on Firebase and Apple infrastructure and industry-standard encryption to protect your data.</p>
+
+  <h2>Children’s Privacy</h2>
+  <p>The App is not directed to children under 13. If we learn we have collected personal information from a child under 13, we will delete it.</p>
 
   <h2>Changes</h2>
   <p>We may update this Privacy Policy from time to time. Updates will be posted here with a new “Last Updated” date.</p>
