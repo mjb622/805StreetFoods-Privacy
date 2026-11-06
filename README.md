@@ -10,7 +10,7 @@ The Privacy Policy can be viewed at:
 
 ## Last Updated
 
-November 18, 2025
+November 6, 2026
 
 ## Contact
 
